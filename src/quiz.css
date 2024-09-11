@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .quiz-wrapper {
+    height: 100vh;
+    width: 100vw;
+    background: url("images/Group\ 1766.png") top left no-repeat, url("images/Group\ 1767.png") bottom left no-repeat, rgb(198,239,200);
+    background-size: 100%;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .quiz-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 20px;
+    width: 60%;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #146531;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .question {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .options {
+    margin-bottom: 20px;
+  }
+  
+  .options div {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    font-size: 1.2rem;
+    color: #444;
+    margin-left: 10px;
+  }
+  
+  input[type="radio"] {
+    transform: scale(1.2);
+    margin-right: 10px;
+  }
+  
+  .submit-btn {
+    cursor: pointer;
+    background-color: rgb(20, 101, 49);
+    color: #fff;
+    width: 150px;
+    height: 50px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 100px;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0f5230;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  @media screen and (max-width: 850px) and (min-width: 650px) {
+    .quiz-wrapper {
+      background: url("./images/tablet-view1.png") top left no-repeat, url("./images/tablet-view2.png") bottom left no-repeat, rgb(198,239,200);
+      background-size: 100%;
+    }
+  
+    .quiz-container {
+      width: 80%;
+    }
+  }
+  
+  @media screen and (max-width: 650px) {
+    .quiz-wrapper {
+      background: url("./images/mobile-design1.png") top left no-repeat, url("./images/mobile-design.png") bottom left no-repeat, rgb(198,239,200);
+      background-size: 100%;
+    }
+  
+    .quiz-container {
+      width: 90%;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    .question {
+      font-size: 1.2rem;
+    }
+  
+    .submit-btn {
+      width: 120px;
+      height: 45px;
+      font-size: 1.2rem;
+    }
+  }
+  

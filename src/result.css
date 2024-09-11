@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .result-wrapper {
+    height: 100vh;
+    width: 100vw;
+    background: url("images/Group\ 1766.png") top left no-repeat, url("images/Group\ 1767.png") bottom left no-repeat, rgb(198,239,200);
+    background-size: 100%;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .scoreboard-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 20px;
+    width: 50%;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #146531;
+  }
+  
+  .final-score {
+    font-size: 2rem;
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  .marvelous {
+    font-size: 3rem;
+    color: #ff6347;
+    font-weight: bold;
+    animation: glow 1.5s infinite;
+    text-shadow: 2px 2px 10px #ff4500;
+  }
+  
+  @keyframes glow {
+    0% {
+      text-shadow: 2px 2px 10px #ff4500;
+    }
+    50% {
+      text-shadow: 2px 2px 20px #ff4500;
+    }
+    100% {
+      text-shadow: 2px 2px 10px #ff4500;
+    }
+  }
+  
+  .confetti {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+  }
+  
+  .button {
+    cursor: pointer;
+    background-color: #146531;
+    color: #fff;
+    width: 150px;
+    height: 50px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 100px;
+    margin-top: 20px;
+  }
+  
+  .button:hover {
+    background-color: #0f5230;
+  }
+  
+  @media screen and (max-width: 850px) and (min-width: 650px) {
+    .result-wrapper {
+      background: url("./images/tablet-view1.png") top left no-repeat, url("./images/tablet-view2.png") bottom left no-repeat, rgb(198,239,200);
+      background-size: 100%;
+    }
+  
+    .scoreboard-container {
+      width: 80%;
+    }
+  }
+  
+  @media screen and (max-width: 650px) {
+    .result-wrapper {
+      background: url("./images/mobile-design1.png") top left no-repeat, url("./images/mobile-design.png") bottom left no-repeat, rgb(198,239,200);
+      background-size: 100%;
+    }
+  
+    .scoreboard-container {
+      width: 90%;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    .final-score {
+      font-size: 1.5rem;
+    }
+  
+    .marvelous {
+      font-size: 2.5rem;
+    }
+  
+    .button {
+      width: 120px;
+      height: 45px;
+      font-size: 1.2rem;
+    }
+  }
+  

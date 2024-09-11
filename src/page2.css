@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.div-wrapper{
+    height: 100vh;
+    width: 100vw;
+    background-repeat:no-repeat;
+    background: url("images/Group\ 1766.png") top left no-repeat, url("images/Group\ 1767.png") bottom left no-repeat, rgb(198,239,200);
+    background-size: 100%;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.spinWheel{
+    position: relative;
+}
+.spinWheel .spinner{
+    width: 400px;
+ }
+ .spinWheel .needle{
+    position: absolute;
+    z-index: 2;
+    top:50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: auto;
+ }
+.btn button{
+    cursor: pointer;
+    background-color: rgb(20,101,49);
+    color: #fff;
+    width: 200px;
+    height: 65px;
+    font-size: 2rem;
+    border: none;
+    border-radius: 100px;
+}
+.start-rotate{
+    animation: start-rotate 1s linear infinite;
+}
+@keyframes start-rotate{
+     100%{
+        transform: rotate(360deg);
+    }
+}
+.stop-rotate{
+    animation-play-state:paused;
+    
+}
+.confetti{
+    height:100vh;
+    width: 100vw;
+    position: absolute;
+}
+@media screen and (max-width:850px) and (min-width:650px) {
+    .div-wrapper{
+        background: url("./images/tablet-view1.png") top left no-repeat, url("./images/tablet-view2.png") bottom left no-repeat, rgb(198,239,200);
+        background-size: 100%;
+    }
+}
+@media screen and (max-width:650px){
+    .div-wrapper{
+        background: url("./images/mobile-design1.png") top left no-repeat, url("./images/mobile-design.png") bottom left no-repeat, rgb(198,239,200);
+        background-size: 100%;
+    }
+    .spinWheel .spinner{
+        width: 300px;
+    }
+}
