@@ -31,7 +31,7 @@ const Page2 = () => {
     const turns = Math.floor(Math.random() * 10 + 1) + 0.16667 * sectorDecider;
 
     const image = document.getElementById("spinImage");
-    image.style.transition = `all 3s`;
+    image.style.transition = `all 2.5s`;
     image.style.transform = `rotate(${turns}turn)`;
 
     // After the rotation animation ends, redirect to quiz page with the selected topic
@@ -39,7 +39,7 @@ const Page2 = () => {
       audio.pause();  // Pause the spin sound
       history.push({
         pathname: "/quiz",
-        state: { topic: topics[sectorDecider], spinsLeft: spinsLeft - 1, score },
+        state: { topic: topics[sectorDecider], spinsLeft, score },
       });
     }, 3000);
   };
