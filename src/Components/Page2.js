@@ -28,7 +28,7 @@ const Page2 = () => {
   const startRotation = () => {
     audio.play();  // Play the spin sound
     const sectorDecider = Math.floor(Math.random() * topics.length);  // Randomly decide the topic
-    const turns = Math.floor(Math.random() * 10 + 1) + 0.16667 * sectorDecider;
+    const turns = Math.floor(Math.random() * 10 + 1) +1-( 0.16667 * sectorDecider);
 
     const image = document.getElementById("spinImage");
     image.style.transition = `all 2.5s`;
